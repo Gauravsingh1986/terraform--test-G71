@@ -1,0 +1,9 @@
+rego={
+    grv={
+        location="eastus"
+        name="stgdevopsinsider12345678"
+        rgname="rg-devops-insider"
+        account_tier="Standard"
+        account_replication_type="LRS"
+    }
+}
