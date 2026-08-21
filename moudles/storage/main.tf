@@ -1,6 +1,6 @@
 resource "azurerm_storage_account" "st" {
   for_each = var.sts
-  name                     = each.value.name
+  name                     = each.value.stsname
   resource_group_name      = each.value.rgname    
   location                 = each.value.location
   account_tier             = each.value.account_tier
