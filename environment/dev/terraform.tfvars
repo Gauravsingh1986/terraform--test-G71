@@ -1,9 +1,30 @@
 rego={
-    grv={
-        location="eastus"
-        name="stgdevopsinsider12345678"
-        rgname="rg-devops-insider"
-        account_tier="Standard"
-        account_replication_type="LRS"
+    rgs={
+        rg1={
+            rgname="rg1"
+            location="eastus"
+        }
+        rg2={
+            rgname="rg2"
+            location="westus"
+        }
+    }
+    
+    st={
+        sts1={
+            stsname="stsgrv11234567"
+            rgname="rg1"
+            account_tier="Standard"
+            account_replication_type="LRS"
+            location="eastus"
+        }
+        sts2={
+            stsname="stsgrv212345679"
+            rgname="rg2"
+            location="westus"
+            account_tier="Standard"
+            account_replication_type="LRS"
+            
+        }
     }
 }
